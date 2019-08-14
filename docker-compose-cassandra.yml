@@ -1,0 +1,9 @@
+version: '2'
+services:
+  cassandra-1:
+    image: cassandra:3
+    container_name: cassandra-1
+    ports:
+      - "7000:7000"
+    volumes:
+      - /data/cassandra:/var/lib/cassandra
